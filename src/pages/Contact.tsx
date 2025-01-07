@@ -1,19 +1,20 @@
+import {MouseEvent} from "react";
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Mail, MessageCircle, Linkedin, Phone, Instagram } from 'lucide-react';
 
 export default function Contact() {
-  const handleClicktoInstagram = (event: MouseEvent) => {
+  const handleClicktoInstagram = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     window.open('https://www.instagram.com/supertramper_spb/', '_blank');
   }
 
-  const handleClicktoTelegram = (event: MouseEvent) => {
+  const handleClicktoTelegram = (event:MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     window.open('https://t.me/frontender89', '_blank');
   }
 
-  const handleClicktoLinkedin = (event: MouseEvent) => {
+  const handleClicktoLinkedin = (event:MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     window.open('https://www.linkedin.com/in/artem-aleksiutovich/', '_blank');
   }
@@ -46,7 +47,7 @@ export default function Contact() {
           <Card className="bg-zinc-900 border-zinc-800 p-6">
             <h2 className="text-xl font-semibold mb-4">Социальные сети</h2>
             <div className="space-y-4">
-              <Button variant="outline" className="w-full justify-start">
+              <Button variant="outline" onClick={(e)=>handleClicktoInstagram(e)} className="w-full justify-start">
                 <Instagram className="mr-2 h-5 w-5" />
                 Instagram
               </Button>

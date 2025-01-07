@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, ShoppingCart, Boxes, Brain, Globe, Laptop } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 
 const projects = [
   {
