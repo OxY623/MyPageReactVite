@@ -39,7 +39,7 @@ export default function Contact() {
               <a title="Написать мне в телеграмм" href="https://t.me/frontender89" className="group flex items-center gap-3">
                 <MessageCircle className="h-5 w-5 text-gray-400 group-hover:scale-105 group-hover:text-green-500  transition-all ease-in" />
                 <span className="group-hover:scale-105 group-hover:text-green-500 transition-all ease-in">@frontender89</span>
-                <sub className="text-orange-400 align-top">(предпочитаемы способ связи)</sub>
+                <sub className="text-orange-400 align-top hidden sm:inline">(предпочитаемый способ связи)</sub>
               </a>
             </div>
           </Card>

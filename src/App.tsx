@@ -33,29 +33,29 @@ function App() {
               <AvatarImage src={avatar} />
               <AvatarFallback>AA</AvatarFallback>
             </Avatar>
-            <h1 className="text-xl font-bold">Артем Алексютович</h1>
+            <h1 className="text-xl font-bold ">Артем <span className="hidden sm:inline">Алексютович</span></h1>
           </div>
-          <nav className="flex gap-6">
+          <nav className="flex gap-2 sm:gap-6 overflow-auto sm:overflow-visible">
             <Button 
               variant={activeSection === 'about' ? 'secondary' : 'ghost'}
               onClick={() => setActiveSection('about')}
             >
               <User className="mr-2 h-4 w-4" />
-              Обо мне
+              <span className="hidden sm:inline">Обо мне</span>
             </Button>
             <Button
               variant={activeSection === 'projects' ? 'secondary' : 'ghost'}
               onClick={() => setActiveSection('projects')}
             >
               <Code2 className="mr-2 h-4 w-4" />
-              Проекты
+              <span className="hidden sm:inline">Проекты</span>
             </Button>
             <Button
               variant={activeSection === 'contact' ? 'secondary' : 'ghost'}
               onClick={() => setActiveSection('contact')}
             >
               <MessageCircle className="mr-2 h-4 w-4" />
-              Контакты
+              <span className="hidden sm:inline">Контакты</span>
             </Button>
           </nav>
         </div>
