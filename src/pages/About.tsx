@@ -35,7 +35,7 @@ export default function About() {
           </section>
 
           <section>
-            <h3 className="text-xl font-semibold mb-4">Опыт работы</h3>
+{/*             <h3 className="text-xl font-semibold mb-4">Опыт работы</h3>
             <div className="space-y-6">
               <div className="border border-white/10 rounded-lg p-6">
                 <h4 className="font-semibold">Frontend-разработчик</h4>
@@ -50,9 +50,9 @@ export default function About() {
                   <li>Менторинг junior разработчиков</li>
                   <li>Проведение код-ревью и технических собеседований</li>
                 </ul>
-              </div>
+              </div> */}
               
-              <div className="border border-white/10 rounded-lg p-6">
+{/*               <div className="border border-white/10 rounded-lg p-6">
                 <h4 className="font-semibold">Frontend-разработчик</h4>
                 <p className="text-gray-400">ООО "РЭД КОД" • 2020 - 2022</p>
                 <ul className="list-disc list-inside text-gray-400 mt-2">
@@ -65,7 +65,7 @@ export default function About() {
                     компании</li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </section>
 
           <section>
