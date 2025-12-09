@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "title": "Frontend studio that builds sites in a day",
+    "subtitle": "Landings, layout, deployment",
+    "cta": "Leave a request"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Choose the right service for your project",
+    "landingProduct": {
+      "title": "Landing for product or service",
+      "description": "Responsive landing with contact form and contacts",
+      "duration": "Duration: 2–4 days",
+      "price": "Price: 150–300 BYN",
+      "offer": "I'll make a landing for your product with order form in 4 days"
+    },
+    "landingBenefits": {
+      "title": "Landing with benefits and reviews",
+      "description": "Landing with \"benefits\", \"reviews\", \"contacts\" sections",
+      "duration": "Duration: 3–5 days",
+      "price": "Price: 200–350 BYN",
+      "offer": "I'll create a landing with full information about your product in 5 days"
+    },
+    "miniSite": {
+      "title": "Mini-site / SPA project",
+      "description": "Company or project website with basic content",
+      "duration": "Duration: 3–5 days",
+      "price": "Price: 200–350 BYN",
+      "offer": "I'll make a responsive mini-site for your project in 5 days"
+    },
+    "layout": {
+      "title": "Page / block layout",
+      "description": "Layout a design or block in HTML/CSS/JS/Tailwind",
+      "duration": "Duration: 1–2 days",
+      "price": "Price: 100–200 BYN",
+      "offer": "I'll layout a page or block with responsive design in 2 days"
+    },
+    "deployment": {
+      "title": "Website deployment on hosting",
+      "description": "Domain connection, SSL, hosting (Netlify/Vercel)",
+      "duration": "Duration: 1 day",
+      "price": "Price: 80–150 BYN",
+      "offer": "I'll deploy the site on hosting with domain and SSL in 1 day"
+    },
+    "seo": {
+      "title": "Basic SEO and optimization",
+      "description": "Meta tags, alt, sitemap, image optimization",
+      "duration": "Duration: 1–2 days",
+      "price": "Price: 80–150 BYN",
+      "offer": "I'll set up basic SEO and site optimization in 2 days"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Examples of our work",
+    "viewDetails": "View details"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Contact us in a convenient way",
+    "telegram": "Telegram",
+    "telegramDescription": "Write to us on Telegram for quick communication",
+    "openTelegram": "Open Telegram",
+    "email": "Email",
+    "emailDescription": "Send an email to our email",
+    "cta": "Leave a request"
+  },
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts"
+  },
+  "footer": {
+    "copyright": "© 2025 MR.Frontender89. All rights reserved."
+  },
+  "portfolioPage": {
+    "title": "Portfolio",
+    "back": "Back",
+    "description": "Here are examples of our work. Each project is created with attention to detail and focus on results."
+  }
+}
+

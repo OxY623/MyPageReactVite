@@ -1,75 +1,88 @@
-import { useState } from 'react';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Hero } from './components/sections/Hero';
+import { ServicesSection } from './components/sections/ServicesSection';
+import { PortfolioSection } from './components/sections/PortfolioSection';
+import { ContactsSection } from './components/sections/ContactsSection';
 import { Button } from '@/components/ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { User, Code2, MessageCircle } from 'lucide-react';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import avatar from './img/photo_2025-01-07_17-44-41.jpg'
+import { ThemeToggle } from './components/ThemeToggle';
+import { LanguageToggle } from './components/LanguageToggle';
+import PortfolioPage from './pages/PortfolioPage';
 
-function App() {
-  const [activeSection, setActiveSection] = useState('about');
+function HomePage() {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
 
-  const renderContent = () => {
-    switch (activeSection) {
-      case 'about':
-        return <About />;
-      case 'projects':
-        return <Projects />;
-      case 'contact':
-        return <Contact />;
-      default:
-        return <About />;
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <>
       {/* Header */}
-      <header className="fixed top-0 w-full bg-black/50 backdrop-blur-lg border-b border-white/10 z-50">
+      <header className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Avatar className="h-10 w-10">
-              <AvatarImage src={avatar} />
-              <AvatarFallback>AA</AvatarFallback>
-            </Avatar>
-            <h1 className="text-xl font-bold ">Артем <span className="hidden sm:inline">Алексютович</span></h1>
+          <div className="flex items-center">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              MR.Frontender89
+            </h1>
           </div>
-          <nav className="flex gap-2 sm:gap-6 overflow-auto sm:overflow-visible">
-            <Button 
-              variant={activeSection === 'about' ? 'secondary' : 'ghost'}
-              onClick={() => setActiveSection('about')}
-            >
-              <User className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Обо мне</span>
-            </Button>
-            <Button
-              variant={activeSection === 'projects' ? 'secondary' : 'ghost'}
-              onClick={() => setActiveSection('projects')}
-            >
-              <Code2 className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Проекты</span>
-            </Button>
-            <Button
-              variant={activeSection === 'contact' ? 'secondary' : 'ghost'}
-              onClick={() => setActiveSection('contact')}
-            >
-              <MessageCircle className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Контакты</span>
-            </Button>
-          </nav>
+          <div className="flex items-center gap-4">
+            <nav className="hidden md:flex gap-2">
+              <Button
+                variant="ghost"
+                onClick={() => scrollToSection('services')}
+              >
+                {t('nav.services')}
+              </Button>
+              <Button
+                variant="ghost"
+                onClick={() => navigate('/portfolio')}
+              >
+                {t('nav.portfolio')}
+              </Button>
+              <Button
+                variant="ghost"
+                onClick={() => scrollToSection('contacts')}
+              >
+                {t('nav.contacts')}
+              </Button>
+            </nav>
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="pt-16">
-        {renderContent()}
+      <main>
+        <Hero />
+        <ServicesSection />
+        <PortfolioSection />
+        <ContactsSection />
       </main>
 
-      <footer className="border-t border-white/10 py-6 text-center text-gray-400">
-        <p>© 2025 Артем Алексютович. Все права защищены.</p>
+      {/* Footer */}
+      <footer className="border-t border-border py-6 text-center text-muted-foreground">
+        <p>{t('footer.copyright')}</p>
       </footer>
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen bg-background text-foreground">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
