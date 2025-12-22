@@ -1,13 +1,19 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, MessageCircle } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Mail, MessageCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function ContactsSection() {
   const { t } = useTranslation();
 
   const handleCtaClick = () => {
-    window.open('https://t.me/mrfrontender89', '_blank');
+    window.open("https://t.me/frontender_89", "_blank");
   };
 
   return (
@@ -15,10 +21,10 @@ export function ContactsSection() {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            {t('contacts.title')}
+            {t("contacts.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t('contacts.subtitle')}
+            {t("contacts.subtitle")}
           </p>
         </div>
 
@@ -28,19 +34,21 @@ export function ContactsSection() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <MessageCircle className="h-6 w-6 text-primary" />
-                <CardTitle>{t('contacts.telegram')}</CardTitle>
+                <CardTitle>{t("contacts.telegram")}</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base mb-4">
-                {t('contacts.telegramDescription')}
+                {t("contacts.telegramDescription")}
               </CardDescription>
               <Button
                 variant="outline"
                 className="w-full"
-                onClick={() => window.open('https://t.me/mrfrontender89', '_blank')}
+                onClick={() =>
+                  window.open("https://t.me/frontender_89", "_blank")
+                }
               >
-                {t('contacts.openTelegram')}
+                {t("contacts.openTelegram")}
               </Button>
             </CardContent>
           </Card>
@@ -50,19 +58,21 @@ export function ContactsSection() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Mail className="h-6 w-6 text-primary" />
-                <CardTitle>{t('contacts.email')}</CardTitle>
+                <CardTitle>{t("contacts.email")}</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base mb-4">
-                {t('contacts.emailDescription')}
+                {t("contacts.emailDescription")}
               </CardDescription>
               <Button
                 variant="outline"
                 className="w-full"
-                onClick={() => window.location.href = 'mailto:mrfrontender89@gmail.com'}
+                onClick={() =>
+                  (window.location.href = "mailto:frontender7@gmail.com")
+                }
               >
-                mrfrontender89@gmail.com
+                frontender7@gmail.com
               </Button>
             </CardContent>
           </Card>
@@ -75,11 +85,10 @@ export function ContactsSection() {
             size="lg"
             className="text-lg px-8 py-6 h-auto"
           >
-            {t('contacts.cta')}
+            {t("contacts.cta")}
           </Button>
         </div>
       </div>
     </section>
   );
 }
-

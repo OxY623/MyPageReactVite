@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Frontend studio that builds sites in a day",
+    "title": "A frontend developer providing website creation within 24 hours.",
     "subtitle": "Landings, layout, deployment",
     "cta": "Leave a request"
   },
@@ -57,12 +57,12 @@
   },
   "contacts": {
     "title": "Contacts",
-    "subtitle": "Contact us in a convenient way",
+    "subtitle": "Contact me in a convenient way",
     "telegram": "Telegram",
-    "telegramDescription": "Write to us on Telegram for quick communication",
+    "telegramDescription": "Write to me on Telegram for quick communication",
     "openTelegram": "Open Telegram",
     "email": "Email",
-    "emailDescription": "Send an email to our email",
+    "emailDescription": "Send an email to my email",
     "cta": "Leave a request"
   },
   "nav": {
@@ -76,7 +76,6 @@
   "portfolioPage": {
     "title": "Portfolio",
     "back": "Back",
-    "description": "Here are examples of our work. Each project is created with attention to detail and focus on results."
+    "description": "Here are examples of my work. Each project is created with attention to detail and focus on results."
   }
 }
-

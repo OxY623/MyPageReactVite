@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import man from '@/img/man.png';
 
 export function Hero() {
   const { t } = useTranslation();
@@ -17,9 +18,9 @@ export function Hero() {
       <div className="container mx-auto max-w-4xl">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           {/* Фото */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 self-start">
             <Avatar className="h-48 w-48 md:h-64 md:w-64 border-4 border-primary">
-              <AvatarImage src="/photo.jpg" alt="MR.Frontender89" />
+              <AvatarImage src={man} alt="MR.Frontender89" />
               <AvatarFallback className="text-4xl bg-primary text-primary-foreground">
                 MR
               </AvatarFallback>
@@ -31,7 +32,7 @@ export function Hero() {
             {/* Логотип */}
             <div className="mb-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                MR.Frontender89
+                <span className="text-black dark:text-white">MR.</span><span className="text-primary">Frontender</span><span className="text-black dark:text-white">_89</span>
               </h1>
             </div>
 
