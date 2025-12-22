@@ -43,9 +43,27 @@ export default function PortfolioPage() {
       category: lang === "ru" ? "Лендинг" : "Landing",
       technologies: ["React", "Vite", "Tailwind CSS"],
       images: [
-        { id: 1, src: "/portfolio/bookend_2.jpg", alt: "Landing preview" },
-        { id: 2, src: "/portfolio/bookend_2.jpg", alt: "Landing preview" },
-        { id: 3, src: "/portfolio/bookend_2.jpg", alt: "Landing preview" },
+        { id: 1, src: "/portfolio/gallery_1/gallery_slide_1.jpg", alt: "Hero" },
+        {
+          id: 2,
+          src: "/portfolio/gallery_1/gallery_slide_2.jpg",
+          alt: "Intro",
+        },
+        {
+          id: 3,
+          src: "/portfolio/gallery_1/gallery_slide_3.jpg",
+          alt: "Collection Bookend",
+        },
+        {
+          id: 4,
+          src: "/portfolio/gallery_1/gallery_slide_4.jpg",
+          alt: "Collection Hookbrass",
+        },
+        {
+          id: 5,
+          src: "/portfolio/gallery_1/gallery_slide_5.jpg",
+          alt: "Footer",
+        },
       ],
       url: "https://bookendhookbrass.netlify.app/",
     },
@@ -62,9 +80,40 @@ export default function PortfolioPage() {
           ? "Участвовал в разработке сервиса аренды недвижимости. Проработал UI-логику карточек объектов, навигацию и пользовательские сценарии поиска. Делал акцент на читаемость данных, понятную структуру и удобство принятия решений пользователем."
           : "Contributed to the development of a real estate rental service. Worked on property cards UI logic, navigation, and search user flows. Focused on data clarity, structure, and decision-making UX.",
       category: lang === "ru" ? "Сервис" : "Service",
-      technologies: ["React", "TypeScript", "Tailwind CSS"],
-      images: [{ id: 1, src: "/portfolio/rental.jpg", alt: "Service UI" }],
-      url: "",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      images: [
+        {
+          id: 1,
+          src: "/portfolio/gallery_2/1.png",
+          alt: "Main page",
+        },
+        {
+          id: 2,
+          src: "/portfolio/gallery_2/2.png",
+          alt: "Product property",
+        },
+        {
+          id: 3,
+          src: "/portfolio/gallery_2/3.png",
+          alt: "Header",
+        },
+        {
+          id: 4,
+          src: "/portfolio/gallery_2/4.png",
+          alt: "Collection properties",
+        },
+        {
+          id: 5,
+          src: "/portfolio/gallery_2/5.png",
+          alt: "Form adding new property 1",
+        },
+        {
+          id: 6,
+          src: "/portfolio/gallery_2/6.png",
+          alt: "Form adding new property 2",
+        },
+      ],
+      url: "https://property-pulse-nextjs-nine.vercel.app/",
     },
     {
       id: 3,
@@ -81,25 +130,30 @@ export default function PortfolioPage() {
           ? "Разработал тестовый лендинг для green-tech компании GreenRobotic. Проект демонстрирует умение работать с продуктовой подачей, технологическими смыслами и экологической повесткой. Сделан упор на долгосрочную ценность продукта и понятную коммуникацию."
           : "Built a test landing page for the green-tech company GreenRobotic. The project highlights product thinking, technology-driven messaging, and sustainability values, with a focus on long-term product benefits and clear communication.",
       category: lang === "ru" ? "Лендинг" : "Landing",
-      technologies: ["React", "Vite", "Tailwind CSS"],
+      technologies: ["HTML", "Vanilla JavaScript (ES6+)", "CSS3"],
       images: [
         {
           id: 1,
-          src: "/portfolio/1_green.jpg",
-          alt: "GreenRobotic landing header",
+          src: "/portfolio/gallery_3/1.png",
+          alt: "GreenRobotic landing Header",
         },
         {
           id: 2,
-          src: "/portfolio/2_green.jpg",
-          alt: "GreenRobotic landing main content",
+          src: "/portfolio/gallery_3/2.png",
+          alt: "GreenRobotic landing main Content",
         },
         {
           id: 3,
-          src: "/portfolio/3_green.jpg",
-          alt: "GreenRobotic landing footer",
+          src: "/portfolio/gallery_3/3.png",
+          alt: "GreenRobotic landing Form",
+        },
+        {
+          id: 4,
+          src: "/portfolio/gallery_3/4.png",
+          alt: "GreenRobotic landing Footer",
         },
       ],
-      url: "",
+      url: "https://oxy623.github.io/green-corp-landing/",
     },
     {
       id: 4,
@@ -117,7 +171,85 @@ export default function PortfolioPage() {
           : "Participated in the development of a platform for discovering events and connecting people by interests. Worked on interfaces, interaction logic, and user flows. The project focuses on scalability, community-building, and product-driven thinking.",
       category: lang === "ru" ? "Платформа" : "Platform",
       technologies: ["React", "TypeScript", "WebSockets"],
-      images: [{ id: 1, src: "/portfolio/event.jpg", alt: "Events platform" }],
+      images: [
+        {
+          id: 1,
+          src: "/portfolio/gallery_4/1 (4).jpg",
+          alt: "Main page",
+        },
+        {
+          id: 2,
+          src: "/portfolio/gallery_4/1 (2).jpg",
+          alt: "Popup",
+        },
+        {
+          id: 3,
+          src: "/portfolio/gallery_4/1 (3).jpg",
+          alt: "Footer",
+        },
+        {
+          id: 4,
+          src: "/portfolio/gallery_4/1.jpg",
+          alt: "Drop-down menu",
+        },
+        {
+          id: 5,
+          src: "/portfolio/gallery_4/1 (5).jpg",
+          alt: "Content",
+        },
+        {
+          id: 6,
+          src: "/portfolio/gallery_4/1 (6).jpg",
+          alt: "Page",
+        },
+      ],
+      url: "https://www.get-together.events/",
+    },
+    {
+      id: 5,
+      title:
+        lang === "ru"
+          ? "Брендовая платформа Fox&Oxy"
+          : "Fox&Oxy branded platform",
+      description:
+        lang === "ru"
+          ? "Разработка e-commerce платформы с фокусом на мерч и социальной миссии (в процессе)"
+          : "Development of an e-commerce platform focused on merchandise and social mission (in progress)",
+      fullDescription:
+        lang === "ru"
+          ? "В настоящее время создаю  брендовую платформу Fox&Oxy с продажей мерча и интеграцией социальной миссии. Реализую адаптивные интерфейсы, оформление заказов, оплату, а также автоматизацию управления заказами и аналитику. Проект сочетает продуктовый подход, социальное влияние и UX/UI решения."
+          : "Currently building the Fox&Oxy branded platform featuring merchandise sales and a social mission. Implementing responsive interfaces, order processing, payments, as well as automation for order management and analytics. The project combines product thinking, social impact, and UX/UI solutions.",
+      category: lang === "ru" ? "E-commerce / Social" : "E-commerce / Social",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind",
+        "RTK Query",
+        "Node.js",
+      ],
+      images: [
+        {
+          id: 1,
+          src: "/portfolio/gallery_5/1.jpg",
+          alt: "Main page",
+        },
+        {
+          id: 2,
+          src: "/portfolio/gallery_5/2.jpg",
+          alt: "Popup",
+        },
+        {
+          id: 3,
+          src: "/portfolio/gallery_5/3.jpg",
+          alt: "User profile",
+        },
+        {
+          id: 4,
+          src: "/portfolio/gallery_5/4.jpg",
+          alt: "Dashboard events",
+        },
+      ],
       url: "",
     },
   ];
@@ -126,7 +258,7 @@ export default function PortfolioPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between bg">
           <div className="flex items-center gap-4">
             <Button variant="ghost" onClick={() => navigate("/")}>
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -192,7 +324,7 @@ export default function PortfolioPage() {
                   </CardTitle>
                   <CardDescription className="text-base leading-relaxed">
                     {item.fullDescription || item.description}
-                    {item.url && (
+                    {item.url ? (
                       <a
                         href={item.url}
                         target="_blank"
@@ -201,6 +333,10 @@ export default function PortfolioPage() {
                       >
                         {t("portfolioPage.visitProject")}
                       </a>
+                    ) : (
+                      <p className="text-orange-600">
+                        {lang === "ru" ? "Еще в работе." : "Still in progress."}
+                      </p>
                     )}
                   </CardDescription>
                 </CardHeader>

@@ -66,6 +66,19 @@ export function PortfolioSection() {
       category: lang == "ru" ? "Платформа" : "Platform",
       image: "./portfolio/event.jpg",
     },
+    {
+      id: 5,
+      title:
+        lang == "ru"
+          ? "Бренд унисекс-одежды Foxy&OxY"
+          : "Foxy&OxY unisex clothing brand",
+      description:
+        lang == "ru"
+          ? "Разработка и запуск бренда унисекс-одежды с собственным сайтом, ориентированного на современный городской стиль и социальную ответственность. Проект включает онлайн-продажи, проработанную визуальную айдентику и благотворительную инициативу — 10% прибыли направляется в фонд помощи диким животным."
+          : "Development and launch of a unisex clothing brand with a custom-built website, focused on modern urban style and social responsibility. The project includes online sales, a strong visual identity, and a charity initiative, with 10% of profits donated to wildlife conservation funds.",
+      category: lang == "ru" ? "Бренд / E-commerce" : "Brand / E-commerce",
+      image: "./portfolio/fox.jpg",
+    },
   ];
 
   return (
