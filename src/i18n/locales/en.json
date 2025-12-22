@@ -76,6 +76,7 @@
   "portfolioPage": {
     "title": "Portfolio",
     "back": "Back",
+    "visitProject": "Visit Project",
     "description": "Here are examples of my work. Each project is created with attention to detail and focus on results."
   }
 }

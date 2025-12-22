@@ -1,15 +1,15 @@
-import { Button } from '@/components/ui/button';
-import { useTranslation } from 'react-i18next';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import man from '@/img/man.png';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import man from "@/img/man.png";
+import { useTranslation } from "react-i18next";
 
 export function Hero() {
   const { t } = useTranslation();
 
   const handleCtaClick = () => {
-    const contactsSection = document.getElementById('contacts');
+    const contactsSection = document.getElementById("contacts");
     if (contactsSection) {
-      contactsSection.scrollIntoView({ behavior: 'smooth' });
+      contactsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -32,18 +32,20 @@ export function Hero() {
             {/* Логотип */}
             <div className="mb-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                <span className="text-black dark:text-white">MR.</span><span className="text-primary">Frontender</span><span className="text-black dark:text-white">_89</span>
+                <span className="text-black dark:text-white">MR.</span>
+                <span className="text-primary">Frontend</span>
+                <span className="text-black dark:text-white">er_89</span>
               </h1>
             </div>
 
             {/* Заголовок */}
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              {t('hero.title')}
+              {t("hero.title")}
             </h2>
 
             {/* Подзаголовок */}
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              {t('hero.subtitle')}
+              {t("hero.subtitle")}
             </p>
 
             {/* CTA кнопка */}
@@ -52,7 +54,7 @@ export function Hero() {
               size="lg"
               className="text-lg px-8 py-6 h-auto"
             >
-              {t('hero.cta')}
+              {t("hero.cta")}
             </Button>
           </div>
         </div>
@@ -60,4 +62,3 @@ export function Hero() {
     </section>
   );
 }
-

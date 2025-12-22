@@ -28,8 +28,8 @@ function HomePage() {
           <div className="flex items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
               <span className="text-black dark:text-white">MR.</span>
-              <span className="text-primary">Frontender</span>
-              <span className="text-black dark:text-white">_89</span>
+              <span className="text-primary">Frontend</span>
+              <span className="text-black dark:text-white">er_89</span>
             </h1>
           </div>
           <div className="flex items-center gap-4">

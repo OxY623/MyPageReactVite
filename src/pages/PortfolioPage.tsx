@@ -47,6 +47,7 @@ export default function PortfolioPage() {
         { id: 2, src: "/portfolio/bookend_2.jpg", alt: "Landing preview" },
         { id: 3, src: "/portfolio/bookend_2.jpg", alt: "Landing preview" },
       ],
+      url: "https://bookendhookbrass.netlify.app/",
     },
     {
       id: 2,
@@ -63,6 +64,7 @@ export default function PortfolioPage() {
       category: lang === "ru" ? "Сервис" : "Service",
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       images: [{ id: 1, src: "/portfolio/rental.jpg", alt: "Service UI" }],
+      url: "",
     },
     {
       id: 3,
@@ -97,6 +99,7 @@ export default function PortfolioPage() {
           alt: "GreenRobotic landing footer",
         },
       ],
+      url: "",
     },
     {
       id: 4,
@@ -115,6 +118,7 @@ export default function PortfolioPage() {
       category: lang === "ru" ? "Платформа" : "Platform",
       technologies: ["React", "TypeScript", "WebSockets"],
       images: [{ id: 1, src: "/portfolio/event.jpg", alt: "Events platform" }],
+      url: "",
     },
   ];
 
@@ -129,7 +133,9 @@ export default function PortfolioPage() {
               {t("portfolioPage.back")}
             </Button>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              MR.Frontender89
+              <span className="text-black dark:text-white">MR.</span>
+              <span className="text-primary">Frontend</span>
+              <span className="text-black dark:text-white">er_89</span>
             </h1>
           </div>
           <div className="flex items-center gap-4">
@@ -186,6 +192,16 @@ export default function PortfolioPage() {
                   </CardTitle>
                   <CardDescription className="text-base leading-relaxed">
                     {item.fullDescription || item.description}
+                    {item.url && (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 text-primary hover:underline"
+                      >
+                        {t("portfolioPage.visitProject")}
+                      </a>
+                    )}
                   </CardDescription>
                 </CardHeader>
               </Card>
